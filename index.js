@@ -5,6 +5,9 @@ const passwordOne = document.getElementById("password-one");
 const passwordTwo = document.getElementById("password-two");
 const generateBtn = document.getElementById("generate-btn");
 
+const copyBtnOne = document.getElementById("copy-btn-one");
+const copyBtnTwo = document.getElementById("copy-btn-two");
+
 const generatePassword = function () {
   let password = "";
   for (let i = 1; i < 16; i++) {
@@ -20,4 +23,14 @@ const loadPasswords = function () {
   passwordTwo.textContent = generatePassword();
 };
 
+const copyBtn = function (text) {
+  navigator.clipboard.writeText(text);
+};
+
+copyBtnOne.addEventListener("click", () => {
+  copyBtn(passwordOne.textContent);
+});
+copyBtnTwo.addEventListener("click", () => {
+  copyBtn(passwordTwo.textContent);
+});
 generateBtn.addEventListener("click", loadPasswords);

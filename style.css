@@ -63,12 +63,26 @@ hr {
   color: #55f991;
 }
 .passwords p {
-  background: #273549;
+  margin: 0;
+}
+
+.copy-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-item {
   margin-top: 35px;
   width: 200px;
-  height: 30px;
-  border-radius: 6px;
+  height: 39px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  background: #273549;
+  border-radius: 6px;
+  padding: 0 10px;
 }
