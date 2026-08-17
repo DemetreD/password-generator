@@ -3,12 +3,13 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 const passwordOne = document.getElementById("password-one");
 const passwordTwo = document.getElementById("password-two");
+const generateBtn = document.getElementById("generate-btn");
 
 const generatePassword = function () {
   let password = "";
   for (let i = 1; i < 16; i++) {
-    let password1 = Math.floor(Math.random() * characters.length);
-    password += characters[password1];
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    password += characters[randomIndex];
   }
 
   return password;
@@ -18,3 +19,5 @@ const loadPasswords = function () {
   passwordOne.textContent = generatePassword();
   passwordTwo.textContent = generatePassword();
 };
+
+generateBtn.addEventListener("click", loadPasswords);

@@ -15,7 +15,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 550px;
+  max-width: 550px;
   padding: 100px 50px;
 }
 
@@ -58,9 +58,7 @@ hr {
 
 .passwords {
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
   gap: 24px;
   color: #55f991;
 }
