@@ -11,6 +11,7 @@
 }
 body {
   background: #1f2937;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -35,7 +36,43 @@ body {
 
 .container__description {
   color: #d5d4d8;
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
+}
+
+.container__btn {
+  font: inherit;
+  background: #10b981;
+  color: #fff;
+  margin: 60px 0 44px 0;
+  padding: 9px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #2f3e53;
+}
+
+.passwords {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+  color: #55f991;
+}
+.passwords p {
+  background: #273549;
+  margin-top: 35px;
+  width: 200px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
