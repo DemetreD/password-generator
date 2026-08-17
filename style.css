@@ -32,3 +32,10 @@ body {
   color: #55f991;
   display: block;
 }
+
+.container__description {
+  color: #d5d4d8;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
