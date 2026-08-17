@@ -1,0 +1,34 @@
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+body {
+  background: #1f2937;
+}
+
+.container {
+  margin: 0 auto;
+  width: 550px;
+  border: 1px solid red;
+  padding: 100px 50px;
+}
+
+.container__title {
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.container__title span {
+  color: #55f991;
+  display: block;
+}
